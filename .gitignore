@@ -1,0 +1,4 @@
+node_modules/
+#messages.json      # optional – keep out of repo if you ever add real data
+*.log               # keep log files private
+.env                # just in case one appears later
