@@ -1,4 +1,4 @@
-pwd# Chat Feed Proof-of-Concept App
+
 
 A minimal full-stack app demonstrating a real-time chat feed using Node.js/Express (backend) and Socket.io (real-time communication) with a simple HTML/JS frontend.
 
