@@ -34,18 +34,20 @@ Open `client/index.html` in a browser or use the served endpoint.
 - Installed: express, socket.io, nodemon. 
 - Test: npm run dev starts server; localhost:3000 serves index.html. 
 - No RooCode API costs incurred. 
-- Openweb UI API costs incurred (to 7:34): $0.005205
-- Tokens in: 18,439
-- Tokens out: 5,355
+- Step 1 Openweb UI API costs incurred: $0.005205
+- Step 1 tokens in: 18,439
+- Step 1 tokens out: 5,355
 
 ### Step 2 Verification  
 - Fixed: Static file path using path.join(__dirname, '../client') for proper serving of index.html.
 - Tested: localhost:3000 loads HTML page; multiple tabs connect (server logs show socket IDs).
 - No RooCode API costs incurred. 
-- Openweb UI API costs incurred: $0.00899
-- Columative Openweb UI API costs incurred (to 7:50):
-- Tokens in: 30,613
-- Tokens out: 6,001
+- Step 2 Openweb UI API costs incurred: $0.00899
+- Columative Openweb UI API costs incurred: $0.01420
+- Step 2 tokens in: 30,613
+- Step 2 tokens out: 6,001
+- Columative tokens in: 49,052
+- Columatice tokens out: 11,356
 
 ### Step 3: Frontend Integration
 - Created script.js: Socket.io client for connect, load/send/receive messages, DOM updates (auto-scroll).
@@ -54,10 +56,24 @@ Open `client/index.html` in a browser or use the served endpoint.
 - Tested: Multi-tab chat—messages send from one tab, appear live in others; reloads preserve history.
 - API Notes: WebSocket events (load-messages, new-message); in-memory sync across clients.
 - No RooCode API costs incurred. 
-- Openweb UI API costs incurred: $0.01402
-- Columative Openweb UI API costs incurred (to 8:03):
-- Tokens in: 54,954
-- Tokens out: 8,435
+- Step 3 Openweb UI API costs incurred: $0.01402
+- Columative Openweb UI API costs incurred: $0.02822
+- Step 3 tokens in: 54,954
+- Step 3 tokens out: 8,435
+- Columative tokens in: 104,006
+- Columative tokens out: 19,791
 
+### Step 4: Enhancements and Wrap-Up
+- Backend: Added fs persistence (messages.json), validation (trim/length), error logging.
+- Frontend: Client validation, error alerts, clear button, better timestamps.
+- Tested: Messages persist across restarts; errors handled; multi-client sync.
+- API Notes: Internal only (WebSockets + file I/O); no external costs.
+- No RooCode API costs incurred. 
+- Step 4 Openweb UI API costs incurred: $0.00625
+- Columative Openweb UI API costs incurred: $0.03447
+- Step 4 tokens in: 25,291
+- Step 4 tokens out: 2,536
+- Columative tokens in: 129,297
+- Columative tokens out: 22,327
 
 
