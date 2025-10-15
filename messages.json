@@ -1,0 +1,23 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "user": "music_fan",
+      "text": "what about favourite gig?",
+      "timestamp": "2025-10-15T23:11:35.544Z"
+    },
+    {
+      "id": 2,
+      "user": "uber_beats",
+      "text": "Where's the pope at the first Big Day out at Adelaide, 1993 or 94, the picture on the back of one of their albums was taking from the stage, there I aml, centre, front row!!",
+      "timestamp": "2025-10-15T23:12:51.491Z"
+    },
+    {
+      "id": 3,
+      "user": "music_fan",
+      "text": "oh awesome!!",
+      "timestamp": "2025-10-15T23:13:24.072Z"
+    }
+  ],
+  "nextId": 4
+}
